@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Multi-step form</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="nav flexc">
+
+      <div class="step">
+        <div class="cir one active">1</div>
+        <div class="label">
+          <div class="title">Step 1</div>
+          <div class="des">Your info</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="cir two">2</div>
+        <div class="label">
+          <div class="title">Step 2</div>
+          <div class="des">Select plan</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="cir three">3</div>
+        <div class="label">
+          <div class="title">Step 3</div>
+          <div class="des">Add-ons</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="cir four">4</div>
+        <div class="label">
+          <div class="title">Step 4</div>
+          <div class="des">Summary</div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="body one flexc active">
+      <div class="header">
+        <div class="main">Personal info</div>
+        <div class="info">Please provide your name, email address, and phone number.</div>
+      </div>
+      <div class="inputs flexc">
+        <div class="in flexc">
+          <label>Name</label>
+          <input class="" type="text" placeholder="e.g. Stephen King">
+          <div class="err">This Field Is Needed</div>
+        </div>
+        <div class="in flexc">
+          <label>Email Address</label>
+          <input type="text" placeholder="e.g. stephenking@lorem.com">
+          <div class="err">This Field Is Needed</div>
+        </div>
+        <div class="in flexc">
+          <label>Phone Number</label>
+          <input type="number" placeholder="e.g. +1 234 567 890">
+          <div class="err">This Field Is Needed</div>
+        </div>
+      </div>
+      <button>Next Step</button>
+    </div>
+
+    <div class="body two flexc">
+      <div class="header">
+        <div class="main">Select your plan</div>
+        <div class="info">You have the option of monthly or yearly billing.</div>
+      </div>
+      <div class="inputs flexc">
+        <div class="boxes">
+          <div class="box flexc active">
+            <img src="./images/icon-arcade.svg" alt="icon-arcade" class="icon">
+            <div class="info">
+              <div class="title">Arcade</div>
+              <div class="price">$9/mo</div>
+              <div class="discount">2 months free</div>
+            </div>
+          </div>
+          <div class="box flexc">
+            <img src="./images/icon-advanced.svg" alt="icon-advanced" class="icon">
+            <div class="info">
+              <div class="title">Advanced</div>
+              <div class="price">$12/mo</div>
+              <div class="discount">2 months free</div>
+            </div>
+          </div>
+          <div class="box flexc">
+            <img src="./images/icon-pro.svg" alt="icon-pro" class="icon">
+            <div class="info">
+              <div class="title">Pro</div>
+              <div class="price">$15/mo</div>
+              <div class="discount">2 months free</div>
+            </div>
+          </div>
+        </div>
+        <div class="switcher">
+          <span class="ac">Monthly</span>
+          <div class="switch flexc"><span class="ball"></span></div>
+          <span>Yearly</span>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="back">Go Back</button>
+        <button>Next Step</button>
+      </div>
+    </div>
+
+    <div class="body three flexc">
+      <div class="header">
+        <div class="main">Pick add-ons</div>
+        <div class="info">Add-ons help enhance your gaming experience.</div>
+      </div>
+      <div class="inputs flexc">
+        <div class="box flexr">
+          <div class="flexr">
+            <input type="checkbox">
+            <div class="info">
+              <div class="title">Online service</div>
+              <div class="price">Access to multiplayer games</div>
+            </div>
+          </div>
+          <div class="disc">+$1/mo</div>
+        </div>
+        <div class="box flexr">
+          <div class="flexr">
+            <input type="checkbox">
+            <div class="info">
+              <div class="title">Larger storage</div>
+              <div class="price">Extra 1TB of cloud save</div>
+            </div>
+          </div>
+          <div class="disc">+$2/mo</div>
+        </div>
+        <div class="box flexr">
+          <div class="flexr">
+            <input type="checkbox">
+            <div class="info">
+              <div class="title">Customizable Profile</div>
+              <div class="price">Custom theme on your profile</div>
+            </div>
+          </div>
+          <div class="disc">+$2/mo</div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="back">Go Back</button>
+        <button>Next Step</button>
+      </div>
+    </div>
+
+    <div class="body four flexc">
+      <div class="header">
+        <div class="main">Finishing up</div>
+        <div class="info">Double-check everything looks OK before confirming.</div>
+      </div>
+      <div class="inputs flexc">
+        <div class="box flexc">
+          <div class="mainer flexr">
+            <div class="flexr">
+              <div class="info">
+                <div class="title">Arcade (Monthly)</div>
+                <div class="price">Change</div>
+              </div>
+            </div>
+            <div class="disc">$9/mo</div>
+          </div>
+          <div class="addon">
+
+          </div>
+        </div>
+        <div class="addon total">
+          <div class="bo flexr">
+            <div class="price">Total (per month/year)</div>
+            <div class="discc">$9/mo</div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="back">Go Back</button>
+        <button>Confirm</button>
+      </div>
+    </div>
+
+    <div class="body five flexc">
+      <img src="./images/icon-thank-you.svg" alt="Thanks">
+      <div class="main">Thank you!</div>
+      <div class="info">
+        Thanks for confirming your subscription! We hope you have fun
+        using our platform. If you ever need support, please feel free
+        to email us at support@loremgaming.com.
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Yousuf Gamal Eldin</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
